@@ -1,0 +1,90 @@
+/* 1. CONTENEDOR PRINCIPAL DEL FOOTER */
+.footer {
+  background-color: #55585e; /* Un gris oscuro casi negro, súper elegante */
+  color: #f8f9fa; /* Texto blanco/gris clarito para que resalte */
+  padding-top: 50px;
+  margin-top: 60px; /* Le da espacio de respiración respecto a las tarjetas de arriba */
+  width:100%;
+  box-sizing:border-box; /* Hace que el padding no sume ancho extra */
+}
+
+/* 2. ZONA DE LAS 3 COLUMNAS */
+.footer-container {
+  display: grid;
+  /* Esta línea mágica crea 3 columnas iguales y las hace adaptables */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 100px; /* Separación entre las columnas */
+  max-width: 1200px; /* Mismo ancho que el navbar y la hero-section */
+  margin: 0 auto; /* Lo centra en la pantalla */
+  padding: 0px 30px 40px 20px;
+}
+
+/* 3. TÍTULOS DE LAS COLUMNAS */
+.footer-container h3, 
+.footer-container h4 {
+  color: #eeb134; /* Tu color dorado para los títulos */
+  margin-top: 0;
+}
+
+.footer-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.footer-container h4 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* 4. TEXTOS DE DESCRIPCIÓN Y CONTACTO */
+.footer-container p {
+  color: #adb5bd; /* Gris claro para lectura cómoda */
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* 5. LISTAS Y ENLACES (Menú de navegación) */
+.footer-container ul {
+  list-style: none; /* Borra los puntitos de la lista */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-container ul li {
+  margin-bottom: 12px;
+  color: #adb5bd;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre los emojis de contacto y el texto */
+}
+
+.footer-container ul li a {
+  color: #adb5bd;
+  text-decoration: none; /* Quita la línea de abajo */
+  transition: color 0.3s ease, padding-left 0.3s ease; /* Efecto suave */
+}
+
+/* El toque interactivo: al pasar el mouse se pone dorado y se mueve un poquito */
+.footer-container ul li a:hover {
+  color: #eeb134; 
+  padding-left: 5px; 
+}
+
+/* 6. BARRA INFERIOR (COPYRIGHT) */
+.footer-inferior {
+  background-color: #1e1f22; /* Un tono apenas más oscuro que el fondo del footer */
+  padding: 20px;
+  text-align: center; /* Centra el texto de copyright */
+  border-top: 1px solid rgba(255, 255, 255, 0.05); /* Línea divisoria muy sutil */
+}
+
+.footer-inferior p {
+  margin: 5px 0;
+  color: #868e96;
+  font-size: 1.1rem;
+}
+
+.footer-inferior .dev-credits {
+  font-size: 0.8rem;
+  opacity: 0.9; /* Lo hace un poco más transparente para que no compita con el copyright */
+}

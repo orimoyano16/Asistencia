@@ -1,0 +1,11 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;600;700&display=swap');
+
+
+body {
+  /* Esta lista usa las fuentes modernas por defecto de Windows, Mac y Android */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f8f9fa; /* Un gris muy claro para el fondo */
+  padding: 0;
+}
