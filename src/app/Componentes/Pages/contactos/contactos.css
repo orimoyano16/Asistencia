@@ -1,0 +1,133 @@
+.img-isbh {
+    border-radius: 10px;
+    width: 700px; /*Ancho*/
+    height: 400px; /*Alto*/
+    box-shadow: 0 4px 30px rgba(138, 67, 0, 0.474);
+}
+
+.img-small {
+    width: 50px;
+    height: 50px;
+}
+
+.titulo-principal {
+    color: #eeb134;
+}
+
+.subtitulo-ubicacion {
+    color: #eeb134;
+}
+
+.red-fb {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-ig {
+    position:relative; /*Elemento mantiene su espacio y solo se desplaza visualmente.*/
+    top: 6px;
+    width: 60px;
+    height: 60px;
+}
+
+.icon-gmail {
+    position:relative; /*Elemento mantiene su espacio y solo se desplaza visualmente.*/
+    top: 6px;
+    width: 60px;
+    height: 60px;
+}
+
+.icon-wsp {
+    position:relative; /*Elemento mantiene su espacio y solo se desplaza visualmente.*/
+    top: 1px;
+    width: 50px;
+    height: 50px;
+}
+
+.subtitulo-redes {
+    text-align: center;
+    color: #eeb134;
+}
+
+.redes-card {
+    display: inline;
+}
+
+.text-redes {
+    position: relative;
+    top: -18px;
+}
+
+.tarjeta-sede {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.container-ubicacion {
+    text-align: center;
+}
+
+.container-redes {
+    width: 500px;
+    margin: 50px auto;
+    width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(138, 67, 0, 0.474);
+}
+
+.container-contacto {
+    width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(138, 67, 0, 0.474);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.subtitulo-contacto {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #eeb134;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #eeb134;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffaa00;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
