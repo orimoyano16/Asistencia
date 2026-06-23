@@ -1,0 +1,34 @@
+<section class="servicios" aria-labelledby="titulo-servicios">
+  <header class="servicios__header">
+    <h2 id="titulo-servicios" class="servicios__titulo">
+      {{ tituloSeccion }}
+    </h2>
+    <p class="servicios__subtitulo">
+      {{ subtituloSeccion }}
+    </p>
+  </header>
+
+  <div class="servicios__grid">
+    @for (funcionalidad of funcionalidades; track funcionalidad.id) {
+      <article class="servicios__card">
+        <span class="servicios__etiqueta">{{ funcionalidad.etiqueta }}</span>
+
+        <h3 class="servicios__card-titulo">{{ funcionalidad.titulo }}</h3>
+        <p class="servicios__card-descripcion">{{ funcionalidad.descripcion }}</p>
+
+        <!--
+          Lista específica de cada sección.
+          @for anidado: recorre quePodesHacer de cada funcionalidad.
+        -->
+        <div class="servicios__acciones">
+          <p class="servicios__acciones-titulo">En esta sección podés:</p>
+          <ul class="servicios__lista">
+            @for (accion of funcionalidad.quePodesHacer; track accion) {
+              <li>{{ accion }}</li>
+            }
+          </ul>
+        </div>
+      </article>
+    }
+  </div>
+</section>
