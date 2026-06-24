@@ -1,0 +1,4 @@
+@@
+-  imports: [RouterOutlet, Navbar, Footer, Home],
++  imports: [RouterOutlet, Navbar, Footer],
+@@
