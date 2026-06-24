@@ -25,7 +25,7 @@ export interface Funcionalidad {
   styleUrl: './servicios.css',
 })
 export class Servicios {
-  tituloSeccion = 'Servicios y Funcionalidades';
+  tituloSeccion = 'SERVICIOS Y FUNCIONALIDADES';
 
   subtituloSeccion =
     'Conocé las herramientas que ofrece el Sistema de Asistencias Institucional.';

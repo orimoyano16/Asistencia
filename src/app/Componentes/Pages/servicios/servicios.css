@@ -1,11 +1,11 @@
 :host {
-  --color-naranja: #f97316;
-  --color-naranja-oscuro: #ea580c;
+  --color-naranja: #f5b942;
+  --color-naranja-oscuro: #f5b942;
   --color-naranja-claro: #fff7ed;
   --color-blanco: #ffffff;
   --color-texto: #1f2937;
   --color-texto-suave: #6b7280;
-  --sombra-card: 0 4px 14px rgba(249, 115, 22, 0.12);
+  --sombra-card: 0 4px 14px rgba(209, 115, 47, 0.12);
   --radio-borde: 12px;
 
   display: block;
@@ -15,7 +15,6 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 2.5rem 1.25rem;
-  background-color: var(--color-naranja-claro);
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
