@@ -3,7 +3,7 @@ import { Home } from './Componentes/Pages/home/home';
 import { Navbar } from './Componentes/Shared/navbar/navbar';
 import { Footer } from './Componentes/Shared/footer/footer';
 import { Contactos } from './Componentes/Pages/contactos/contactos';
-import {Servicios} from './Componentes/Pages/servicios/servicios';
+import { Servicios } from './Componentes/Pages/servicios/servicios';
 /**
  * ¿Como agregar un recurso nuevo (una nueva page)?
  * 
@@ -18,7 +18,7 @@ export const routes: Routes = [
   { path: 'navbar', component: Navbar },
   { path: 'footer', component: Footer},
   { path: 'contactos', component: Contactos},
-  {path: 'servicios',component: Servicios},
+  { path: 'servicios',component: Servicios},
   { path: '', redirectTo: 'home', pathMatch:'full'}, // 1
   { path: '**', redirectTo: 'home', pathMatch:'full'} // 2
 ];
