@@ -1,0 +1,125 @@
+:host {
+  --color-naranja: #f97316;
+  --color-naranja-oscuro: #ea580c;
+  --color-naranja-claro: #fff7ed;
+  --color-blanco: #ffffff;
+  --color-texto: #1f2937;
+  --color-texto-suave: #6b7280;
+  --sombra-card: 0 4px 14px rgba(249, 115, 22, 0.12);
+  --radio-borde: 12px;
+
+  display: block;
+}
+
+.servicios {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+  background-color: var(--color-naranja-claro);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+.servicios__header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.servicios__titulo {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: var(--color-naranja-oscuro);
+  font-weight: 700;
+}
+
+.servicios__subtitulo {
+  margin: 0 auto;
+  max-width: 620px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-texto-suave);
+}
+
+.servicios__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 600px) {
+  .servicios__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.servicios__card {
+  background: var(--color-blanco);
+  border-radius: var(--radio-borde);
+  padding: 1.5rem;
+  box-shadow: var(--sombra-card);
+  border: 1px solid rgba(249, 115, 22, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.servicios__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.18);
+}
+
+.servicios__etiqueta {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-naranja-oscuro);
+  background-color: rgba(249, 115, 22, 0.12);
+  border-radius: 999px;
+}
+
+.servicios__card-titulo {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+  color: var(--color-texto);
+  font-weight: 600;
+}
+
+.servicios__card-descripcion {
+  margin: 0 0 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--color-texto-suave);
+}
+
+/* Bloque "En esta sección podés:" */
+.servicios__acciones {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+.servicios__acciones-titulo {
+  margin: 0 0 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-naranja-oscuro);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.servicios__lista {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-texto);
+}
+
+.servicios__lista li {
+  margin-bottom: 0.35rem;
+}
+
+.servicios__lista li::marker {
+  color: var(--color-naranja);
+}
