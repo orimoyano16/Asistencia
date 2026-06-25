@@ -1,34 +1,86 @@
 <section class="servicios" aria-labelledby="titulo-servicios">
   <header class="servicios__header">
     <h2 id="titulo-servicios" class="servicios__titulo">
-      {{ tituloSeccion }}
+      SERVICIOS Y FUNCIONALIDADES
     </h2>
     <p class="servicios__subtitulo">
-      {{ subtituloSeccion }}
+      Conocé las herramientas que ofrece el Sistema de Asistencias Institucional.
     </p>
   </header>
 
   <div class="servicios__grid">
-    @for (funcionalidad of funcionalidades; track funcionalidad.id) {
-      <article class="servicios__card">
-        <span class="servicios__etiqueta">{{ funcionalidad.etiqueta }}</span>
 
-        <h3 class="servicios__card-titulo">{{ funcionalidad.titulo }}</h3>
-        <p class="servicios__card-descripcion">{{ funcionalidad.descripcion }}</p>
+    <article class="servicios__card">
+      <span class="servicios__etiqueta">Asistencia</span>
 
-        <!--
-          Lista específica de cada sección.
-          @for anidado: recorre quePodesHacer de cada funcionalidad.
-        -->
-        <div class="servicios__acciones">
-          <p class="servicios__acciones-titulo">En esta sección podés:</p>
-          <ul class="servicios__lista">
-            @for (accion of funcionalidad.quePodesHacer; track accion) {
-              <li>{{ accion }}</li>
-            }
-          </ul>
-        </div>
-      </article>
-    }
+      <h3 class="servicios__card-titulo">Registro de presentismo</h3>
+      <p class="servicios__card-descripcion">
+        Controlá quién asistió a clases o actividades cada día.
+      </p>
+
+      <div class="servicios__acciones">
+        <p class="servicios__acciones-titulo">En esta sección podés:</p>
+        <ul class="servicios__lista">
+          <li>Marcar presente o ausente por alumno</li>
+          <li>Ver la lista del curso en el momento</li>
+          <li>Consultar faltas de días anteriores</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="servicios__card">
+      <span class="servicios__etiqueta">Documentos</span>
+
+      <h3 class="servicios__card-titulo">Justificaciones y certificados</h3>
+      <p class="servicios__card-descripcion">
+        Gestioná las excusas cuando alguien falta con un motivo válido.
+      </p>
+
+      <div class="servicios__acciones">
+        <p class="servicios__acciones-titulo">En esta sección podés:</p>
+        <ul class="servicios__lista">
+          <li>Subir certificado médico o nota</li>
+          <li>Enviar una justificación por inasistencia</li>
+          <li>Ver si fue aprobada o está pendiente</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="servicios__card">
+      <span class="servicios__etiqueta">Reportes</span>
+
+      <h3 class="servicios__card-titulo">Informes de ausentismo</h3>
+      <p class="servicios__card-descripcion">
+        Obtené resúmenes para analizar las faltas de forma ordenada.
+      </p>
+
+      <div class="servicios__acciones">
+        <p class="servicios__acciones-titulo">En esta sección podés:</p>
+        <ul class="servicios__lista">
+          <li>Ver ausencias por mes o trimestre</li>
+          <li>Filtrar por curso, turno o persona</li>
+          <li>Imprimir o exportar el informe</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="servicios__card">
+      <span class="servicios__etiqueta">Dashboard</span>
+
+      <h3 class="servicios__card-titulo">Panel institucional</h3>
+      <p class="servicios__card-descripcion">
+        Vista general para directivos con los datos más importantes del colegio.
+      </p>
+
+      <div class="servicios__acciones">
+        <p class="servicios__acciones-titulo">En esta sección podés:</p>
+        <ul class="servicios__lista">
+          <li>Ver el porcentaje de asistencia general</li>
+          <li>Detectar alumnos con muchas faltas</li>
+          <li>Comparar cursos o períodos</li>
+        </ul>
+      </div>
+    </article>
+
   </div>
 </section>
