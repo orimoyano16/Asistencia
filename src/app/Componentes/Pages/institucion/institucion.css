@@ -8,6 +8,7 @@
     font-size: 40px; /* Cambia el tamaño de la letra */
     color: #eeb134; /* Cambia el color */
     margin-bottom: 10px; /* Parte baja del margen */
+    text-transform: uppercase; /* Transforma todo el texto a mayúsculas*/
 }
 
 
@@ -23,7 +24,7 @@ hr {
     padding: 10px; /* Da 10px de relleno arriba abajo izq der para que no queden pegados los elementos */
     list-style: none; /* Cambia el indice de los elementos de la lista */
     cursor: pointer; /* Cambia el cursor cuando apunta a cada elemento de la lista */
-    transition: all 0.65s ease; 
+    transition: all 0.65s ease; /* En orden: aplica esta transición a todos, segundos de la transición, ritmo de la transición */
 }
 
 /* Hover es una pseudo clase (pseudoclase: da estilo a un elemento dependiendo de su estado (ej. cursor encima, elemento seleccionado) o de su posición en el documento)
@@ -36,35 +37,47 @@ hr {
 
 
 .bloque-objetivos{
-    float: left;
-    width: 55%;
-    margin-right: 0;
+    float: left; /* Saca al elemento de apilarse uno abajo de otro y le dice a que costado pegarse (en este caso left) */
+    width: 55%; /* Ancho del elemento, % es relativo al contenedor padre */
+    margin-right: 0; /* Espacio fuera del elemento, solo del lado derecho */
 }
 
 .bloque-equipo{
     float: right;
     width: 25%;
     margin-left: 15;
+    border-style: groove; /* Le da bordes al contenedor */
+    border-radius: 10px; /* Bordes más redondeados*/
 }
 
+
 .bloque-objetivos-y-equipo{
-    overflow: hidden;
-    margin-left: auto;
-    margin-top: 30px;
+    overflow: hidden; /* overflow es la propiedad para decir que hacer cuando el elemento se desborda de la caja, hidden oculta lo que se desborda */
+    margin-top: 10px; /* espacio de afuera hacia arriba */
 }
 
 
 .bloque-equipo h2{
-    padding-left: 40px ;
+    padding-left: 40px ; /* Centrar equipo con respecto a la lista */
+    color: #eeb134;
+}
+
+
+.equipo-nombres a{
+    color: black; /* Cambio color de azul a negro de los enlaces */
+    text-decoration: none; /* Elimino el subrayado de los enlaces */
+}
+
+.equipo-nombres a:hover{
+    color: #eeb134;
+    text-shadow: 2px 2px #f0f0f0bf; /* Da sombra al texto */
+    cursor: pointer;
 }
 
 
 .equipo-nombres li{
     padding: 5px;
-    list-style-type: "|";
+    list-style-type: "|"; /* cambio del indice de cada elemento*/
 }
 
-.equipo-nombres li:hover{
-    color: #eeb134;
 
-}
