@@ -1,37 +1,37 @@
 .container-sobre-nosotros{
-    max-width: 1100px; 
-    margin: 0 auto;
-    padding: 40px 20px;
+    max-width: 1100px; /* Ancho máximo de la pagina */
+    margin: 0 auto;  /* Espacio exterior a un elemento, o sea separa elementos de otro*/
+    padding: 40px 20px; /* Rellena con los px indicados los bordes | Es el relleno */
 }
 
-.title-uno{
-    font-size: 40px;
+.container-sobre-nosotros h1{
+    font-size: 40px; /* Cambia el tamaño de la letra */
+    color: #eeb134; /* Cambia el color */
+    margin-bottom: 10px; /* Parte baja del margen */
+}
+
+
+hr {
+    border: none; /* Controla el borde completo de un elemento */
+    border-top: 3px solid #eeb134; /* En orden: grosor de la linea, forma de la linea, color de la linea */
+    margin: 40px 0; /* Espacio afuera del elemento y todo lo que lo rodea */
+}
+
+
+/* Para estilos de cada elemento de una lista */ 
+.lista-carreras li{
+    padding: 10px; /* Da 10px de relleno arriba abajo izq der para que no queden pegados los elementos */
+    list-style: none; /* Cambia el indice de los elementos de la lista */
+    cursor: pointer; /* Cambia el cursor cuando apunta a cada elemento de la lista */
+    transition: all 0.65s ease; 
+}
+
+/* Hover es una pseudo clase (pseudoclase: da estilo a un elemento dependiendo de su estado (ej. cursor encima, elemento seleccionado) o de su posición en el documento)
+ que da un efecto visual cuando se pasa un cursor por encima del elemento elegido */
+.lista-carreras li:hover{ 
     color: #eeb134;
-    margin-bottom: 10px;
-}
-
-.separador-uno{
-    border: none;
-    border-top: 2px solid #eeb134;
-    margin: 40px 0;
-}
-
-h2 {
-
-}
-
-#institucion-p{
-
-}
-
-.carreras-lista{
-
-}
-
-.separador-dos{
-    border: none;
-    border-top: 2px solid #eeb134;
-    margin: 40px 0;
+    padding-left: 30px; /* Relleno de la izquierda cuando selecciono un elemento en la lista */
+    background-color: #f0f0f0; /* Color de fondo cuando elijo un elemento */
 }
 
 
@@ -44,7 +44,7 @@ h2 {
 .bloque-equipo{
     float: right;
     width: 25%;
-    margin-left: 5;
+    margin-left: 15;
 }
 
 .bloque-objetivos-y-equipo{
@@ -54,6 +54,17 @@ h2 {
 }
 
 
-.equipo-nombres{
+.bloque-equipo h2{
+    padding-left: 40px ;
+}
+
+
+.equipo-nombres li{
+    padding: 5px;
+    list-style-type: "|";
+}
+
+.equipo-nombres li:hover{
+    color: #eeb134;
 
 }
