@@ -1,0 +1,43 @@
+<div class="gallery-card">
+  <div class="header">
+    <div class="header-top">
+      <h2>Imágenes institucionales</h2>
+      <span class="counter">{{ currentIndex + 1 }} de {{ mediaItems.length }}</span>
+    </div>
+    <a class="institution-link" [href]="institutionUrl" target="_blank" rel="noopener noreferrer">
+      {{ institutionName }}
+    </a>
+  </div>
+
+  <div class="media-stage" (mouseenter)="stopAutoplay()" (mouseleave)="startAutoplay()">
+    <button class="nav prev" (click)="prev()" aria-label="Anterior">&#10094;</button>
+
+    <div class="media-content">
+      <ng-container *ngIf="isImage(currentItem)">
+        <img [src]="currentItem.url" [alt]="currentItem.title" />
+      </ng-container>
+      <ng-container *ngIf="isVideo(currentItem)">
+        <iframe
+          [src]="sanitizedVideoUrl(currentItem.url)"
+          title="{{ currentItem.title }}"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </ng-container>
+    </div>
+
+    <button class="nav next" (click)="next()" aria-label="Siguiente">&#10095;</button>
+  </div>
+
+  <div class="thumbnails">
+    <div class="thumb" *ngFor="let m of mediaItems; let i = index" (click)="goTo(i)" [class.active]="i === currentIndex">
+      <img *ngIf="isImage(m)" [src]="m.url" [alt]="m.title" />
+      <div *ngIf="isVideo(m)" class="video-thumb">▶</div>
+    </div>
+  </div>
+
+  <div class="meta">
+    <h3>{{ currentItem.title }}</h3>
+  </div>
+</div>
